@@ -14,11 +14,11 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "dm-enums"
-  gem.homepage = "http://github.com/greyblake/dm-enums"
+  gem.name = "dm-enum"
+  gem.homepage = "http://github.com/greyblake/dm-enum"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Enumerated models for DataMapper}
+  gem.description = %Q{Enumerated models for DataMapper to cache enumerated values in memory}
   gem.email = "blake131313@gmail.com"
   gem.authors = ["Potapov Sergey"]
   # dependencies defined in Gemfile
@@ -43,7 +43,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "dm-enums #{version}"
+  rdoc.title = "dm-enum #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
