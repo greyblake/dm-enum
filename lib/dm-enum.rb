@@ -1,1 +1,1 @@
-require File.expand_path('enum', 'lib/dm')
+require File.expand_path('../dm/enum', __FILE__)
