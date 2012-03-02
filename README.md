@@ -1,4 +1,4 @@
-# dm-enums (Enumrated models for DataMapper)
+# dm-enum (Enumrated models for DataMapper)
 by Potapov Sergey (aka Blake)
 
 Inspired by [power\_enum](https://github.com/albertosaurus/enumerations_mixin)
@@ -41,7 +41,7 @@ Language["en"] # => #<Language @code="en" @name="English">
 ```
 
 
-## Contributing to dm-enums
+## Contributing to dm-enum
 
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it

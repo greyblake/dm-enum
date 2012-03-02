@@ -20,9 +20,15 @@ Gem::Specification.new do |s|
     ".document",
     ".rspec",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
+    "README.md",
     "Rakefile",
     "VERSION",
+    "dm-enum.gemspec",
+    "lib/dm-enum.rb",
+    "lib/dm/enum.rb",
+    "spec/dm/enum_spec.rb",
     "spec/spec_helper.rb"
   ]
   s.homepage = %q{http://github.com/greyblake/dm-enum}
