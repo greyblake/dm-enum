@@ -21,10 +21,15 @@ module DataMapper
       end
 
       def [](name)
-        if model = @enums_cache[name.to_sym]
-          model
-        elsif !@cache_update_flag
+        unless @cache_update_flag
           raise RuntimeError.new("Looks like you forgot to call `#{self}.update_enums_cache!` before using `#{self}[#{name.inspect}]`")
+        end
+
+        case name
+        when String, Symbol
+          @enums_cache[name.to_sym]
+        when self
+          name
         else
           nil
         end

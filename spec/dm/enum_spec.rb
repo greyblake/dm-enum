@@ -48,5 +48,22 @@ describe DataMapper::Enum do
         expect { City[:Kharkov] }.to raise_error(RuntimeError, error_message)
       end
     end
+
+
+    context "same kind of object is passed" do
+      it "return passed model" do
+        german = Language.new(:code => "de", :name => "German")
+        Language[german].should == german
+      end
+    end
+
+    context "unexpected kind of object is passed" do
+      it "returns nil" do
+        [nil, 1, 2.0, Object.new, Country.new].each do |key|
+          Language[key].should be_nil
+        end
+      end
+    end
+
   end
 end
