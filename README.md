@@ -7,9 +7,17 @@ Inspired by [power\_enum](https://github.com/albertosaurus/enumerations_mixin)
 
 Allows you to cache enumeration models.
 
+
+## Installation
+
+    gem install dm-enum
+
 ## Usage
 
 ```ruby
+
+require 'dm-core'
+require 'dm-enum'
 
 class Language
   include DataMapper::Resource
